@@ -49,6 +49,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.testing)
+//    implementation(libs.androidx.ui.text.google.fonts)
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.5.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +69,7 @@ dependencies {
 
     //Extended Material Icons
     implementation("androidx.compose.material:material-icons-extended")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:2.8.8")
 }

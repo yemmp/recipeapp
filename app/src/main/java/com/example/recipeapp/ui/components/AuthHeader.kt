@@ -1,23 +1,19 @@
 package com.example.recipeapp.ui.components
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.LunchDining
-import androidx.compose.material3.Icon
+import androidx.compose.foundation.layout.offset
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.blur
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import coil3.compose.AsyncImage
+import com.example.recipeapp.R
+import com.example.recipeapp.ui.theme.RecipeappTheme
 
 @Composable
 fun AuthHeader(
@@ -25,24 +21,28 @@ fun AuthHeader(
 //               imageSrc: String, imageTitle: String
 ) {
 //    AsyncImage(modifier = modifier, model = imageSrc, contentDescription = imageTitle)
-    Column(
+    Box(
         modifier = modifier
             .fillMaxWidth()
-            .height(200.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+//            .height(200.dp),
     ) {
 
-        Icon(
-            Icons.Filled.LunchDining,
-            contentDescription = "App Logo Icon",
-            Modifier
-                .size(48.dp)
-                .clip(RoundedCornerShape(15))
-                .background(color = MaterialTheme.colorScheme.primary),
-            tint = Color.White
+       AsyncImage(
+           model = R.drawable.brandimage,
+           contentDescription = "Brand Image",
+           contentScale = ContentScale.Crop,
+           modifier = Modifier.blur(6.dp)
 
-        )
-        Text("Recipes App")
+       )
+        Text("Recipe Lab", style = MaterialTheme.typography.displayLarge, modifier = Modifier.offset(x = 50.dp, y = 100.dp))
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun AuthHeaderPreview() {
+    RecipeappTheme {
+        AuthHeader()
+    }
+
 }
