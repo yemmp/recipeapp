@@ -51,7 +51,7 @@ fun HomeScreen(
             modifier = Modifier.blur(8.dp)
         )
         Column(modifier = Modifier.padding(16.dp)) {
-            Text("Recipes", style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(horizontal = 8.dp))
+            Text("Recipes", style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(horizontal = 8.dp), color = Color.Black)
 
             LazyVerticalGrid(
                 columns = GridCells.Adaptive(minSize = 128.dp),

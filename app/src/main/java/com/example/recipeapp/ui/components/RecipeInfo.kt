@@ -21,13 +21,13 @@ import androidx.compose.ui.unit.dp
 import com.example.recipeapp.data.Recipe
 
 @Composable
-fun RecipeInfo(modifier: Modifier = Modifier, recipe: Recipe) {
+fun RecipeInfo(modifier: Modifier = Modifier, recipe: Recipe,onClick: ()-> Unit) {
     val ingredients = recipe.ingredients
     Card(
         modifier
             .fillMaxSize()
             .offset(y = (-20).dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.background),
         shape = RoundedCornerShape(5)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
@@ -50,7 +50,7 @@ fun RecipeInfo(modifier: Modifier = Modifier, recipe: Recipe) {
         }
         Spacer(modifier.size(156.dp))
 
-        StyledButton(modifier = Modifier.fillMaxWidth(0.5f).offset(x = 100.dp), onClick = {}, buttonText = "Close")
+        StyledButton(modifier = Modifier.fillMaxWidth(0.5f).offset(x = 100.dp), onClick = onClick, buttonText = "Close")
     }
 }
 

@@ -10,9 +10,10 @@ import androidx.compose.ui.graphics.Color
 fun StyledButton(
     modifier: Modifier = Modifier,
     onClick: () -> Unit,
-    buttonText: String
+    buttonText: String,
+    enabled:Boolean = true
 ) {
-    Button(modifier = modifier ,onClick= onClick) {
+    Button(modifier = modifier ,onClick= onClick, enabled = enabled) {
         Text(buttonText)
     }
 }

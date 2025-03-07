@@ -15,131 +15,131 @@ data class Recipe(
 val fakeRecipes = listOf(
     Recipe(
         id = 1,
-        title = "Bolo de Chocolate",
-        description = "Um bolo delicioso e fofinho, com bastante chocolate!",
-        instructions = "Misture os ingredientes e asse por 30 minutos.",
+        title = "Chocolate Cake",
+        description = "A delicious and fluffy cake with lots of chocolate!",
+        instructions = "Mix the ingredients and bake for 30 minutes.",
         imgUrl = R.drawable.chocolatecake,
-        imgStr = "Bolo de Chocolate",
+        imgStr = "Chocolate Cake",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Farinha de Trigo", imgUrl = R.drawable.flour, imgStr = "Farinha de Trigo", quantity = "2 xícaras"),
-            Ingredient(id = 2, name = "Chocolate em pó", imgUrl = R.drawable.cocoapowder, imgStr = "Chocolate em pó", quantity = "4 colheres de sopa"),
-            Ingredient(id = 3, name = "Ovos", imgUrl = R.drawable.eggs, imgStr = "Ovos", quantity = "3 unidades")
+            Ingredient(id = 1, name = "Wheat Flour", imgUrl = R.drawable.flour, imgStr = "Wheat Flour", quantity = "2 cups"),
+            Ingredient(id = 2, name = "Cocoa Powder", imgUrl = R.drawable.cocoapowder, imgStr = "Cocoa Powder", quantity = "4 tablespoons"),
+            Ingredient(id = 3, name = "Eggs", imgUrl = R.drawable.eggs, imgStr = "Eggs", quantity = "3 units")
         )
     ),
     Recipe(
         id = 2,
-        title = "Salada de Frutas",
-        description = "Uma salada refrescante com frutas da estação.",
-        instructions = "Corte as frutas e misture em uma tigela.",
+        title = "Fruit Salad",
+        description = "A refreshing salad with seasonal fruits.",
+        instructions = "Cut the fruits and mix them in a bowl.",
         imgUrl = R.drawable.fruitsalad,
-        imgStr = "Salada de Frutas",
+        imgStr = "Fruit Salad",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Maçã", imgUrl = R.drawable.apple, imgStr = "Maçã", quantity = "1 unidade"),
-            Ingredient(id = 2, name = "Banana", imgUrl = R.drawable.banana, imgStr = "Banana", quantity = "2 unidades"),
-            Ingredient(id = 3, name = "Laranja", imgUrl = R.drawable.orange, imgStr = "Laranja", quantity = "1 unidade")
+            Ingredient(id = 1, name = "Apple", imgUrl = R.drawable.apple, imgStr = "Apple", quantity = "1 unit"),
+            Ingredient(id = 2, name = "Banana", imgUrl = R.drawable.banana, imgStr = "Banana", quantity = "2 units"),
+            Ingredient(id = 3, name = "Orange", imgUrl = R.drawable.orange, imgStr = "Orange", quantity = "1 unit")
         )
     ),
     Recipe(
         id = 3,
-        title = "Pizza Margherita",
-        description = "Pizza clássica com molho de tomate, queijo e manjericão.",
-        instructions = "Prepare a massa, adicione o molho e asse por 20 minutos.",
+        title = "Margherita Pizza",
+        description = "Classic pizza with tomato sauce, cheese, and basil.",
+        instructions = "Prepare the dough, add the sauce, and bake for 20 minutes.",
         imgUrl = R.drawable.margherita,
-        imgStr = "Pizza Margherita",
+        imgStr = "Margherita Pizza",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Farinha de Trigo", imgUrl = R.drawable.flour, imgStr = "Farinha de Trigo", quantity = "3 xícaras"),
-            Ingredient(id = 2, name = "Molho de Tomate", imgUrl = R.drawable.tomatosauce, imgStr = "Molho de Tomate", quantity = "1 xícara"),
-            Ingredient(id = 3, name = "Queijo Mussarela", imgUrl = R.drawable.mozzarella, imgStr = "Queijo Mussarela", quantity = "200g")
+            Ingredient(id = 1, name = "Wheat Flour", imgUrl = R.drawable.flour, imgStr = "Wheat Flour", quantity = "3 cups"),
+            Ingredient(id = 2, name = "Tomato Sauce", imgUrl = R.drawable.tomatosauce, imgStr = "Tomato Sauce", quantity = "1 cup"),
+            Ingredient(id = 3, name = "Mozzarella Cheese", imgUrl = R.drawable.mozzarella, imgStr = "Mozzarella Cheese", quantity = "200g")
         )
     ),
     Recipe(
         id = 4,
-        title = "Lasanha à Bolonhesa",
-        description = "Camadas de massa de lasanha com molho bolonhesa e queijo.",
-        instructions = "Monte a lasanha e asse por 40 minutos.",
+        title = "Lasagna Bolognese",
+        description = "Layers of lasagna pasta with Bolognese sauce and cheese.",
+        instructions = "Assemble the lasagna and bake for 40 minutes.",
         imgUrl = R.drawable.lasagna,
-        imgStr = "Lasanha à Bolonhesa",
+        imgStr = "Lasagna Bolognese",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Massa de Lasanha", imgUrl = R.drawable.lasagnasheets, imgStr = "Massa de Lasanha", quantity = "1 pacote"),
-            Ingredient(id = 2, name = "Carne Moída", imgUrl = R.drawable.rawmeat, imgStr = "Carne Moída", quantity = "500g"),
-            Ingredient(id = 3, name = "Molho Bechamel", imgUrl = R.drawable.bechamel, imgStr = "Molho Bechamel", quantity = "2 xícaras")
+            Ingredient(id = 1, name = "Lasagna Sheets", imgUrl = R.drawable.lasagnasheets, imgStr = "Lasagna Sheets", quantity = "1 package"),
+            Ingredient(id = 2, name = "Ground Beef", imgUrl = R.drawable.rawmeat, imgStr = "Ground Beef", quantity = "500g"),
+            Ingredient(id = 3, name = "Bechamel Sauce", imgUrl = R.drawable.bechamel, imgStr = "Bechamel Sauce", quantity = "2 cups")
         )
     ),
     Recipe(
         id = 5,
-        title = "Frango Assado",
-        description = "Frango temperado e assado até ficar dourado e crocante.",
-        instructions = "Tempere o frango e asse por 1 hora.",
+        title = "Roast Chicken",
+        description = "Seasoned and roasted chicken, golden and crispy.",
+        instructions = "Season the chicken and bake for 1 hour.",
         imgUrl = R.drawable.cookedchicken,
-        imgStr = "Frango Assado",
+        imgStr = "Roast Chicken",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Frango", imgUrl = R.drawable.rawchicken, imgStr = "Frango", quantity = "1 unidade"),
-            Ingredient(id = 2, name = "Alho", imgUrl = R.drawable.garlic, imgStr = "Alho", quantity = "3 dentes"),
-            Ingredient(id = 3, name = "Ervas Finas", imgUrl = R.drawable.oregano, imgStr = "Ervas Finas", quantity = "a gosto")
+            Ingredient(id = 1, name = "Chicken", imgUrl = R.drawable.rawchicken, imgStr = "Chicken", quantity = "1 unit"),
+            Ingredient(id = 2, name = "Garlic", imgUrl = R.drawable.garlic, imgStr = "Garlic", quantity = "3 cloves"),
+            Ingredient(id = 3, name = "Fine Herbs", imgUrl = R.drawable.oregano, imgStr = "Fine Herbs", quantity = "to taste")
         )
     ),
     Recipe(
         id = 6,
-        title = "Sopa de Legumes",
-        description = "Uma sopa saudável com diversos legumes frescos.",
-        instructions = "Cozinhe os legumes em água temperada e bata no liquidificador.",
+        title = "Vegetable Soup",
+        description = "A healthy soup with fresh vegetables.",
+        instructions = "Cook the vegetables in seasoned water and blend.",
         imgUrl = R.drawable.soup,
-        imgStr = "Sopa de Legumes",
+        imgStr = "Vegetable Soup",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Cenoura", imgUrl = R.drawable.carrots, imgStr = "Cenoura", quantity = "2 unidades"),
-            Ingredient(id = 2, name = "Batata", imgUrl = R.drawable.potato, imgStr = "Batata", quantity = "2 unidades"),
-            Ingredient(id = 3, name = "Abobrinha", imgUrl = R.drawable.zuchinni, imgStr = "Abobrinha", quantity = "1 unidade")
+            Ingredient(id = 1, name = "Carrot", imgUrl = R.drawable.carrots, imgStr = "Carrot", quantity = "2 units"),
+            Ingredient(id = 2, name = "Potato", imgUrl = R.drawable.potato, imgStr = "Potato", quantity = "2 units"),
+            Ingredient(id = 3, name = "Zucchini", imgUrl = R.drawable.zuchinni, imgStr = "Zucchini", quantity = "1 unit")
         )
     ),
     Recipe(
         id = 7,
-        title = "Hambúrguer Caseiro",
-        description = "Hambúrguer suculento feito com carne de qualidade.",
-        instructions = "Modele os hambúrgueres e frite por 5 minutos de cada lado.",
+        title = "Homemade Burger",
+        description = "Juicy burger made with quality meat.",
+        instructions = "Shape the patties and fry for 5 minutes on each side.",
         imgUrl = R.drawable.hambuguer,
-        imgStr = "Hambúrguer Caseiro",
+        imgStr = "Homemade Burger",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Carne Moída", imgUrl = R.drawable.rawmeat, imgStr = "Carne Moída", quantity = "500g"),
-            Ingredient(id = 2, name = "Pão de Hambúrguer", imgUrl = R.drawable.hamburguerbread, imgStr = "Pão de Hambúrguer", quantity = "2 unidades"),
-            Ingredient(id = 3, name = "Queijo", imgUrl = R.drawable.mozzarella, imgStr = "Queijo", quantity = "2 fatias")
+            Ingredient(id = 1, name = "Ground Beef", imgUrl = R.drawable.rawmeat, imgStr = "Ground Beef", quantity = "500g"),
+            Ingredient(id = 2, name = "Burger Bun", imgUrl = R.drawable.hamburguerbread, imgStr = "Burger Bun", quantity = "2 units"),
+            Ingredient(id = 3, name = "Cheese", imgUrl = R.drawable.mozzarella, imgStr = "Cheese", quantity = "2 slices")
         )
     ),
     Recipe(
         id = 8,
-        title = "Mousse de Maracujá",
-        description = "Sobremesa leve e refrescante com maracujá.",
-        instructions = "Bata os ingredientes no liquidificador e leve à geladeira por 2 horas.",
+        title = "Passion Fruit Mousse",
+        description = "A light and refreshing passion fruit dessert.",
+        instructions = "Blend the ingredients and refrigerate for 2 hours.",
         imgUrl = R.drawable.mousse,
-        imgStr = "Mousse de Maracujá",
+        imgStr = "Passion Fruit Mousse",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Polpa de Maracujá", imgUrl = R.drawable.passionfruit, imgStr = "Polpa de Maracujá", quantity = "1/2 xícara"),
-            Ingredient(id = 2, name = "Leite Condensado", imgUrl = R.drawable.leitecondensado, imgStr = "Leite Condensado", quantity = "1 lata"),
-            Ingredient(id = 3, name = "Creme de Leite", imgUrl = R.drawable.cremedeleite, imgStr = "Creme de Leite", quantity = "1 caixa")
+            Ingredient(id = 1, name = "Passion Fruit Pulp", imgUrl = R.drawable.passionfruit, imgStr = "Passion Fruit Pulp", quantity = "1/2 cup"),
+            Ingredient(id = 2, name = "Condensed Milk", imgUrl = R.drawable.leitecondensado, imgStr = "Condensed Milk", quantity = "1 can"),
+            Ingredient(id = 3, name = "Heavy Cream", imgUrl = R.drawable.cremedeleite, imgStr = "Heavy Cream", quantity = "1 box")
         )
     ),
     Recipe(
         id = 9,
-        title = "Macarrão à Carbonara",
-        description = "Macarrão com molho cremoso de queijo e bacon.",
-        instructions = "Cozinhe o macarrão e prepare o molho enquanto isso.",
+        title = "Carbonara Pasta",
+        description = "Pasta with a creamy cheese and bacon sauce.",
+        instructions = "Cook the pasta and prepare the sauce simultaneously.",
         imgUrl = R.drawable.carbonara,
-        imgStr = "Macarrão à Carbonara",
+        imgStr = "Carbonara Pasta",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Macarrão", imgUrl = R.drawable.macarraocru, imgStr = "Macarrão", quantity = "250g"),
+            Ingredient(id = 1, name = "Pasta", imgUrl = R.drawable.macarraocru, imgStr = "Pasta", quantity = "250g"),
             Ingredient(id = 2, name = "Bacon", imgUrl = R.drawable.bacon, imgStr = "Bacon", quantity = "100g"),
-            Ingredient(id = 3, name = "Queijo Parmesão", imgUrl = R.drawable.mozzarella, imgStr = "Queijo Parmesão", quantity = "50g")
+            Ingredient(id = 3, name = "Parmesan Cheese", imgUrl = R.drawable.mozzarella, imgStr = "Parmesan Cheese", quantity = "50g")
         )
     ),
     Recipe(
         id = 10,
-        title = "Brownie de Chocolate",
-        description = "Um brownie de chocolate com pedaços crocantes.",
-        instructions = "Misture os ingredientes e asse por 30 minutos.",
+        title = "Chocolate Brownie",
+        description = "A chocolate brownie with crunchy chunks.",
+        instructions = "Mix the ingredients and bake for 30 minutes.",
         imgUrl = R.drawable.brownie,
-        imgStr = "Brownie de Chocolate",
+        imgStr = "Chocolate Brownie",
         ingredients = listOf(
-            Ingredient(id = 1, name = "Chocolate Meio Amargo", imgUrl = R.drawable.chocolate, imgStr = "Chocolate Meio Amargo", quantity = "200g"),
-            Ingredient(id = 2, name = "Açúcar", imgUrl = R.drawable.sugar, imgStr = "Açúcar", quantity = "1 xícara"),
-            Ingredient(id = 3, name = "Manteiga", imgUrl = R.drawable.butter, imgStr = "Manteiga", quantity = "100g")
+            Ingredient(id = 1, name = "Dark Chocolate", imgUrl = R.drawable.chocolate, imgStr = "Dark Chocolate", quantity = "200g"),
+            Ingredient(id = 2, name = "Sugar", imgUrl = R.drawable.sugar, imgStr = "Sugar", quantity = "1 cup"),
+            Ingredient(id = 3, name = "Butter", imgUrl = R.drawable.butter, imgStr = "Butter", quantity = "100g")
         )
     ))

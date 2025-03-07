@@ -34,6 +34,7 @@ fun StyledTextField(
         trailingIcon = trailingIcon?.let {
             { Icon(imageVector = it, contentDescription = null) }
         },
+        singleLine = true
     )
 
 }
