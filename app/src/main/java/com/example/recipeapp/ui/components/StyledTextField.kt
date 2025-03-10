@@ -2,6 +2,7 @@ package com.example.recipeapp.ui.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -21,7 +22,7 @@ fun StyledTextField(
 
 ) {
 
-    TextField(
+    OutlinedTextField(
         modifier = modifier.fillMaxWidth(),
         value = value,
         onValueChange = onValueChange,
@@ -33,6 +34,7 @@ fun StyledTextField(
         trailingIcon = trailingIcon?.let {
             { Icon(imageVector = it, contentDescription = null) }
         },
+        singleLine = true
     )
 
 }
